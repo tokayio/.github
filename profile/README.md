@@ -10,7 +10,7 @@ Tokay adapts to your code so you can use the language, framework, and applicatio
 
 You don't have to deploy the application yourself or babysit your agent while they do it. [Give a coding agent such as Claude Code or Codex their own Tokay identity](https://tokay.io/use-cases/let-an-ai-agent-deploy-safely) and ask them to put the application live. You can give them only the access they need, and we check it on every request. They can set secrets but cannot read them back, and every action is recorded under the appropriate identity.
 
-With the [Tokay MCP server](https://tokay.io/docs/platform-mcp), your agent can handle the deployment from source code through setup and verification. They recover from failures on their own and ask for your judgment only when a decision requires it. The full deployment protocol at [app.tokay.io/llms.txt](https://app.tokay.io/llms.txt) also covers the public GraphQL API when an agent needs lower level control.
+With the [Tokay MCP server](https://tokay.io/docs/platform-mcp), your agent can handle the deployment from source code through setup and verification. They recover from failures on their own and ask for your judgment only when a decision requires it. The full deployment protocol at [app.tokay.io/llms.txt](https://app.tokay.io/llms.txt) also covers the public GraphQL API when an agent needs lower level control. [tokayio/tokay-deploy](https://github.com/tokayio/tokay-deploy) adds Tokay to Claude Code as a plugin, and to Codex, Cursor, and other agents as a skill, so they know when Tokay fits and how to connect.
 
 ## Leave the infrastructure to us
 
@@ -32,7 +32,7 @@ When you need to change your database structure, you can [deploy database change
 
 ## Start free
 
-Launch your application for free on a machine that stays on. No credit card is required, and you get 2 vCPU, 2.5 GB RAM, and 20 GB storage. When you need more capacity, the Standard plan provides 4 vCPU, 8 GB RAM, and 60 GB storage for $20 per month. Larger dedicated machines support heavier production workloads well beyond the Standard plan.
+Launch your application for free on a machine that stays on. No credit card is required, and you get 2 vCPU, 2.5 GB RAM, and 20 GB storage. When you need more capacity, a Small workspace provides 4 vCPU, 8 GB RAM, and 60 GB storage for $30 per month, and [larger sizes](https://tokay.io/pricing) go well beyond that for heavier production workloads.
 
 [tokayio/tokay-examples](https://github.com/tokayio/tokay-examples) contains complete applications you or your AI agent can deploy. Start with the source, download a ZIP, or follow the guides at [tokay.io/examples](https://tokay.io/examples).
 
